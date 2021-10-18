@@ -199,3 +199,5 @@ ro.surface_flinger.set_touch_timer_ms=750
 # WiFi
 wifi.aware.interface=wifi-aware0
 
+# System
+persist.sys.binary_xml=false
