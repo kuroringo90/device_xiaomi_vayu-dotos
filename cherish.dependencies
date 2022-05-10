@@ -13,21 +13,4 @@
     "branch": "12.1"
   },
   {
-    "remote": "github",
-    "repository": "poco-x3p/android_hardware_qcom_audio",
-    "target_path": "hardware/qcom-caf/sm8150/audio",
-    "branch": "12-caf-sm8150"
-  },
-  {
-    "remote": "github",
-    "repository": "poco-x3p/android_hardware_qcom_display",
-    "target_path": "hardware/qcom-caf/sm8150/display",
-    "branch": "12-caf-sm8150"
-  },
-  {
-    "remote": "github",
-    "repository": "poco-x3p/android_hardware_qcom_media",
-    "target_path": "hardware/qcom-caf/sm8150/media",
-    "branch": "12-caf-sm8150"
-  }
 ]
