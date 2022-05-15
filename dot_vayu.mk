@@ -6,25 +6,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit some common Awaken stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Cherish OS Stuffs
-WITH_GMS := true
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=w1zzyl
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_BLUR := true
+#  DotOS Stuffs
+WITH_GAPPS := true
+TARGET_SUPPORT_GOOGLE_RECORDER := true
 
-PRODUCT_NAME := cherish_vayu
+PRODUCT_NAME := dot_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
