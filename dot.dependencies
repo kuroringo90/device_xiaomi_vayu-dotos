@@ -10,7 +10,7 @@
     "remote": "github",
     "repository": "kuroringo90/android_kernel_xiaomi_sm8150",
     "target_path": "kernel/xiaomi/sm8150",
-    "branch": "newzswap"
+    "branch": "12.1rom"
   },
   {
 ]
