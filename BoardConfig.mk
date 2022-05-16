@@ -88,7 +88,6 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vayu
 TARGET_RECOVERY_DEVICE_MODULES := libinit_vayu
 
 # Kernel
-
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
@@ -102,6 +101,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CONFIG := vayu_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 
 # Input
